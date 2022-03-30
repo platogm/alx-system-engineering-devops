@@ -1,20 +1,2 @@
 #!/bin/bash
-STR=$(ls -a)
-STRn=($STR)
-STRo=""
-for i in "${STRn[@]}"; #accessing each element of array
-do
-	isDir=$(file $i|grep ": directory")
-	if [[ -z $isDir ]]
-	then
-		STRo="${STRo}, ${i}"
-	else
-		if [ -z $STRo ]
-		then
-			STRo="${i}/"
-		else
-			STRo="${STRo}, ${i}/"
-		fi
-	fi
-done  
-echo $STRo
+ls -apm | sort -d
