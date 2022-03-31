@@ -1,7 +1,5 @@
 #!/bin/bash
-STR=$(ls -a)
-STRn=($STR)
-STRo=""
+STR=$(ls -a);STRn=($STR);STRo="";
 for i in "${STRn[@]}"; #accessing each element of array
 do
 	isDir=$(file $i|grep ": directory")
