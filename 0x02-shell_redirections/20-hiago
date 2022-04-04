@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -d 'c' -f 1- --output-delimiter=''|cut -d 'C' -f 1- --output-delimiter=''
