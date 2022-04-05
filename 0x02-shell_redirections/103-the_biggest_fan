@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 1 | sort | uniq -c | sort -nr | cut -d ' ' -f 1 --complement
+cut -f 1 | sort | uniq -c | sort -nr | rev | cut -d ' ' -f 1 | rev
