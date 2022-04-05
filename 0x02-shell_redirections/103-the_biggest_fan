@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -f 1 | sort | uniq -c | sort | cut -d ' ' -f 1 --complement
